@@ -1,3 +1,4 @@
+// test drive BitBucket git repo.
 import React from 'react';
 import ReactDOM from 'react-dom'
 import { Router, Route, hashHistory } from 'react-router';
@@ -16,7 +17,6 @@ socket.on('state', state =>
   store.dispatch(setState(state))
 );
 
-console.log('jaja');
 const createStoreWithMiddleware = applyMiddleware(
   remoteActionMiddleware(socket)
 )(createStore);
